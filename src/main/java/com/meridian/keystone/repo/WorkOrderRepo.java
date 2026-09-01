@@ -1,0 +1,1 @@
+package com.meridian.keystone.repo; import com.meridian.keystone.model.WorkOrder; import org.springframework.data.jpa.repository.JpaRepository; public interface WorkOrderRepo extends JpaRepository<WorkOrder,Long> {}

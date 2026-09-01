@@ -1,0 +1,1 @@
+package com.meridian.keystone.model; import jakarta.persistence.*; @Entity @Table(name="users") public class User { @Id @GeneratedValue public Long id; public String email; public String password; @Enumerated(EnumType.STRING) public Role role; public User(){} public User(String e,String p,Role r){email=e;password=p;role=r;} }
