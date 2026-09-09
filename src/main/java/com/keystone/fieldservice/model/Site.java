@@ -1,0 +1,3 @@
+package com.keystone.fieldservice.model;
+import jakarta.persistence.*;
+@Entity public class Site { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @Column(nullable=false) private String name; private String address; @ManyToOne @JoinColumn(name="customer_id", nullable=false) private Customer customer; public Long getId(){return id;} public void setId(Long id){this.id=id;} public String getName(){return name;} public void setName(String n){this.name=n;} public String getAddress(){return address;} public void setAddress(String a){this.address=a;} public Customer getCustomer(){return customer;} public void setCustomer(Customer c){this.customer=c;} }
